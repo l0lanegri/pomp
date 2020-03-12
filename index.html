@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>POMPUJ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<object type="image/svg+xml" id="header" data="Untitled-2.svg"></object>
+<section id="pokazywajka">
+	<article id="obrazzopis" class="pokazywajkowarzecz">
+		<p>
+		ja pierdole jak ja kocham zycie wlasnie pije sobie <b>drinka</b> w domu, <i>kon zwalony</i>, najedzony pitcom z dagrasso. Nic mi wiecej nie potrzeba ogladam sobie rzeczy o silowni na youtube, kotek siedzi mi na kolanach. Przypominam kon zwalony wiec zero potrzeb zero testosteronu nie musze z nikim walczyc <b>bo nie mam o co</b>. Mam hajsy mam jedzenie i bezpieczenstwo i kon zwalony. Pozdrawiam
+		</p>
+	</article>
+	<article id="obrazzteksty" class="pokazywajkowarzecz"></article>
+	<article id="obrazzkotki" class="pokazywajkowarzecz"></article>
+	<article id="obrazzroslinki" class="pokazywajkowarzecz"></article>
+	<article id="obrazzkontakt" class="pokazywajkowarzecz"></article>
+</section>
+<section id="karuzela">
+	<div id="szkeletkaruzeli">
+	<div id="opis" class="elementkaruzeli"></div>
+	<div id="teksty" class="elementkaruzeli"></div>
+	<div id="kotki" class="elementkaruzeli"></div>
+	<div id="roslinki" class="elementkaruzeli"></div>
+	<div id="kontakt" class="elementkaruzeli"></div>
+</div>
+</section>
+<script type="text/javascript">
+
+	var lozko = document.getElementById('header');
+
+	document.addEventListener("mousemove", function() {
+		var x = event.screenX;   
+		var y = event.screenY;
+		var z = (y + x)/12;  
+		lozko.style.transform = `rotatez(${y}deg)`
+		}
+	);
+
+	/*document.addEventListener('scroll', function() {
+		var anispeed = document.getElementById('szkeletkaruzeli').style.animation.speed;
+		anispeed = `${anispeed} + 10`;
+	});*/
+
+
+	const elemenciurkaruzeli = document.querySelectorAll('.elementkaruzeli');
+
+	elemenciurkaruzeli.forEach(div => {
+		var idudidu = div.id;
+		var odpowiadajacepokazywajkowe = document.getElementById(`obrazz${idudidu}`);
+		div.addEventListener("click", function() {
+			div.classList.toggle("active");
+	    	lozko.getSVGDocument().getElementById("path").setAttribute("fill", "#1F00FC");
+	    	document.getElementById("pokazywajka").style.background = "#F36AF6";
+	  		if (div.classList.contains("active")) {
+	    		odpowiadajacepokazywajkowe.style.display = "block";
+
+	  		} else {
+	    		odpowiadajacepokazywajkowe.style.display = "none";
+	  		};
+
+		});
+	});
+</script>
+</body>
+</html>
