@@ -226,8 +226,7 @@ function szczelanie() {
 };
 
 hitcounter = 0;
-wybuch ="wybuch";
-function gierka()  {
+function gierka(wybuch)  {
 
         $('#hitcounter').html(hitcounter)
 
@@ -306,7 +305,7 @@ plup = 0;
     document.onkeydown = function(e) {
         if(e.keyCode === 16) {
             if(!plup==1) {
-            var huj = setInterval(gierka, 20);
+            var huj = setInterval(gierka(wybuch), 20);
             giera.push(huj);
             plup = 1
             $('#przechwalka').html('X to shoot, arrows to move, Shift to stop');
