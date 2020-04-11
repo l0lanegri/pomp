@@ -226,7 +226,7 @@ function szczelanie() {
 };
 
 hitcounter = 0;
-
+wybuch ="wybuch";
 function gierka()  {
 
         $('#hitcounter').html(hitcounter)
@@ -287,7 +287,7 @@ function gierka()  {
                         if(+doskozzas <= +leftoff && $(this).hasClass('active')) {
                             if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
                                 $(this).removeClass('active');
-                                $(this).css(`background-image`, `assets/wybuch.gif`);
+                                $(this).html(`<img src="assets/${wybuch}.gif" class="wybuchgif">`)
                                 hitcounter = hitcounter+1;
                                 $('#hitcounter').html(hitcounter)
                                 if (hitcounter == 25) {
