@@ -239,7 +239,7 @@ function gierka()  {
 
 
         $(bloki).each(function() {
-                    $(this).addClass(active);
+                    $(this).addClass('active');
                     translacja = parseInt($(this).css("right"));
                     if($(this).position().left < 100) {
                         if($(this).hasClass('true')) {
@@ -277,7 +277,6 @@ function gierka()  {
                     var doskozza = Math.ceil(doskozzza / 10) * 10;
                     var doskozzas = parseInt($(this).position().left);
                     $(bloki).each(function () {
-                        if($(this).hasClass(active))
                         var hujoza = {
                             podofftop : parseInt($(this).position().top),
                             offleft : parseInt($(this).position().left) + 1,
@@ -285,10 +284,10 @@ function gierka()  {
                         }
                         var topoff =  Math.ceil(hujoza.podofftop / 10) * 10;
                         var leftoff = hujoza.offleft + hujoza.widdth;
-                        if(+doskozzas <= +leftoff) {
+                        if(+doskozzas <= +leftoff && $(this).hasClass('active')) {
                             if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
-                                $(this).find($(".wybuchgif")).attr("src", $(this).find($(".wybuchgif")).attr("src"));  
-                                $(this).html(`<img class="wybuchgif" src="assets/wybuch.gif">`);
+                                $(this).removeClass(`active`);
+                                $(this).css(`background-image`, `'assets/wybuch.gif'`)
                                 hitcounter = hitcounter+1;
                                 $('#hitcounter').html(hitcounter)
                                 if (hitcounter == 25) {
