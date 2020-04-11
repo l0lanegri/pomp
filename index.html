@@ -226,7 +226,7 @@ function szczelanie() {
 };
 
 hitcounter = 0;
-function gierka(wybuch)  {
+function gierka()  {
 
         $('#hitcounter').html(hitcounter)
 
@@ -286,7 +286,7 @@ function gierka(wybuch)  {
                         if(+doskozzas <= +leftoff && $(this).hasClass('active')) {
                             if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
                                 $(this).removeClass('active');
-                                $(this).html(`<img src="assets/${wybuch}.gif" class="wybuchgif">`)
+                                $(this).html(`<img src="assets/wybuch.gif" class="wybuchgif">`)
                                 hitcounter = hitcounter+1;
                                 $('#hitcounter').html(hitcounter)
                                 if (hitcounter == 25) {
@@ -305,7 +305,7 @@ plup = 0;
     document.onkeydown = function(e) {
         if(e.keyCode === 16) {
             if(!plup==1) {
-            var huj = setInterval(gierka(wybuch), 20);
+            var huj = setInterval(gierka, 20);
             giera.push(huj);
             plup = 1
             $('#przechwalka').html('X to shoot, arrows to move, Shift to stop');
