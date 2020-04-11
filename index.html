@@ -239,6 +239,7 @@ function gierka()  {
 
 
         $(bloki).each(function() {
+                    $(this).addClass(active);
                     translacja = parseInt($(this).css("right"));
                     if($(this).position().left < 100) {
                         if($(this).hasClass('true')) {
@@ -276,6 +277,7 @@ function gierka()  {
                     var doskozza = Math.ceil(doskozzza / 10) * 10;
                     var doskozzas = parseInt($(this).position().left);
                     $(bloki).each(function () {
+                        if($(this).hasClass(active))
                         var hujoza = {
                             podofftop : parseInt($(this).position().top),
                             offleft : parseInt($(this).position().left) + 1,
