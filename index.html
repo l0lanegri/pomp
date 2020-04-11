@@ -270,7 +270,7 @@ function gierka()  {
                         if(+doskozzas <= +leftoff) {
                             if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
                                 $(this).html($("#wybuch").html()); 
-                                $(self).remove();
+                                $(self).remove(self);
                                 hitcounter = hitcounter+1;
                                 $('#hitcounter').html(hitcounter)
                                 if (hitcounter == 25) {
