@@ -1,68 +1,348 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf8">
-	<title>POMPUJ</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ehh.css">
+    <title>Bartosz Woch</title>
 </head>
 <body>
-<object type="image/svg+xml" id="header" data="Untitled-2.svg"></object>
-<section id="pokazywajka">
-	<article id="obrazzopis" class="pokazywajkowarzecz">
-		<p>
-		ja pierdole jak ja kocham zycie wlasnie pije sobie <b>drinka</b> w domu, <i>kon zwalony</i>, najedzony pitcom z dagrasso. Nic mi wiecej nie potrzeba ogladam sobie rzeczy o silowni na youtube, kotek siedzi mi na kolanach. Przypominam <b>kon zwalony</b> wiec zero potrzeb zero testosteronu nie musze z nikim walczyc <b>bo nie mam o co</b>. Mam hajsy mam jedzenie i bezpieczenstwo i kon zwalony. Pozdrawiam
-		</p>
-	</article>
-	<article id="obrazzteksty" class="pokazywajkowarzecz"></article>
-	<article id="obrazzkotki" class="pokazywajkowarzecz"></article>
-	<article id="obrazzroslinki" class="pokazywajkowarzecz"></article>
-	<article id="obrazzkontakt" class="pokazywajkowarzecz"></article>
-</section>
-<section id="karuzela">
-	<div id="szkeletkaruzeli">
-	<div id="opis" class="elementkaruzeli"></div>
-	<div id="teksty" class="elementkaruzeli"></div>
-	<div id="kotki" class="elementkaruzeli"></div>
-	<div id="roslinki" class="elementkaruzeli"></div>
-	<div id="kontakt" class="elementkaruzeli"></div>
+    <header id="gura">
+        <div id="guracontent">
+        <h1>Hi!</h1>
+        <h2>I'm <strong>Bartosz Woch</strong>. I do web development and CGI (preferably both at once).</g2>
+        <h2>Here's some things I'm good at:</h2>
+        </div>
+    </header>
+<div class="skillwrapper" id="skillwrapper">
+<div id="hitcounter"></div>
+<br>
+    <ul id="skile">
+        <li>HTML5</li>
+        <li>HAML</li>
+        <li>CSS</li>
+        <li>SASS</li>
+        <li>Less</li>
+        <li>Bootstrap</li>
+        <li>JavaScript ES6</li>
+        <li>jQuery</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>Pug</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>MongoDB</li>
+        <li>Google Search Console</li>
+        <li>WebGL</li>
+        <li>Python</li>
+        <li>Web Audio API</li>
+        <li>Supercollider</li>
+        <li>Max/MSP</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe XD</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Indesign</li>
+        <li>Blender</li>
+        <li>SketchUp</li>
+    </ul>
+<div id="pociski">
+
 </div>
-</section>
-<script type="text/javascript">
+<div id="dzialo"></div>
+</div>
+    <h2 id="przechwalka" class="guurka">These were some of my skills. If you wanna check yours, hit Shift.</h2>
 
-	var lozko = document.getElementById('header');
+    <ul id="works">
+        <li>
+            <img src="assets/pompsprite.svg" id="pompsprite">
+            <div class="description">
+                <p>2020</p>
+                <p>
+                    <strong>
+                        SPÓŁDZIELNIA ARTYSTYCZNA "POMPUJ"
+                    </strong>
+                </p>
+                <p>
+                    Website with bodiless CMS. Pending.
+                </p>
+            </div>
+        </li>
+        <li>
+            <a href="http://szczur2.github.io"><img src="assets/szczursprite.png" id="szczursprite"></img>
+            <div class="description">
+                <p>2020</p>
+                <p>
+                    <strong>
+                        SZCZUR 2 RADIO "SŁONECZKO"
+                    </strong>
+                </p>
+                <p>
+                    Website and online radio streaming backend
+                </p>
+            </div>
+            </a>
+        </li>
+        <li>
+            <a href="http://magdalenalazarczyk.com"><div id="magdakolko"></div>
+            <div class="description">
+                <p>2020</p>
+                <p>
+                    <strong>
+                        MAGDALENA ŁAZARCZYK
+                    </strong>
+                </p>
+                <p>
+                    Portfolio website with custom-made CMS 
+                </p>
+            </div>
+            </a>
+        </li>
+        <li>
+            <a href="http://ogrodytymczasowe.xyz"><img src="assets/ogrody.png" id="ogrody">
+                <div class="description">
+                    <p>2019</p>
+                    <p>
+                        <strong>
+                            OGRODY TYMCZASOWE
+                        </strong>
+                    </p>
+                    <p>
+                        Website with WebGL display of Blender 3D models 
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <img src="assets/mur.png" id="mur">
+                <div class="description">
+                    <p>2019</p>
+                    <p>
+                        <strong>
+                            MUR
+                        </strong>
+                    </p>
+                    <p>
+                        Animation of Berlin Wall for theatre visuals
+                    </p>
+                </div>
+        </li>
+        <li>
+            <img src="assets/czwury.svg" id="czworki"></img>
+                <div class="description">
+                    <p>2018</p>
+                    <p>
+                        <strong>
+                            DZIELONE NA CZTERY
+                        </strong>
+                    </p>
+                    <p>
+                        Visual identity and website concept for failed startup
+                    </p>
+                </div>
+        </li>
+        <li>
+            <img src="assets/gkm.svg" id="gkm"></img>
+                <div class="description" id="gkm">
+                    <p>2018</p>
+                    <p>
+                        <strong>
+                            GKM
+                        </strong>
+                    </p>
+                    <p>
+                        Visual identity concept and website for a hypothetical public transit system in the Katowice metropolitan area
+                    </p>
+                </div>
+        </li>
 
-	document.addEventListener("mousemove", function() {
-		var x = event.screenX;   
-		var y = event.screenY;
-		var z = (y + x)/12;  
-		lozko.style.transform = `rotatez(${y}deg)`
-		}
-	);
+        <li>
+            <img src="assets/katmun.png" id="katmunpic"></img>
+                <div class="description" id="katmun">
+                    <p>2016</p>
+                    <p>
+                        <strong>
+                            KatMUN
+                        </strong>
+                    </p>
+                    <p>
+                        Visual identity for the Katowice Model United Nations conference
+                    </p>
+                </div>
+        </li>
+    </ul>
+    <footer>
+        <h2 class="footertext">Now that that's out of the way, feel free to email me at <a href="mailto:bartosz.woch1@gmail.com">bartosz.woch1@gmail.com</a> or call at <strong>+48 669 404 893</strong>. 
+        My site has explosions. Yours can too!</h2>
+    </footer>
 
-	/*document.addEventListener('scroll', function() {
-		var anispeed = document.getElementById('szkeletkaruzeli').style.animation.speed;
-		anispeed = `${anispeed} + 10`;
-	});*/
+    <template id="wybuch">
+        <img class="wybuchgif" src="assets/wybuch.gif">
+    </template>
+<script>
+var dzialo = document.getElementById('dzialo');
+var left = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--left'));
+var pociski = [];
+var bloki = $('#skile').find('li');
+
+var zindex = 420;
+$(bloki).each(function() {
+    zindex++
+    $(this).css("z-index", zindex);
+    $(this).attr('id', zindex);
+    translacja = Math.floor(Math.random() * 200);
+    $(this).css("right", translacja);
+    lwoprar = Boolean(Math.round(Math.random()));
+    var huj = lwoprar.toString(); 
+    $(this).addClass(huj);
+});
 
 
-	const elemenciurkaruzeli = document.querySelectorAll('.elementkaruzeli');
+function szczelanie() { 
+        document.getElementById("pociski").innerHTML = "";
+        pociski.forEach(pocisk => {
+            document.getElementById("pociski").innerHTML += `<div class="pocisk" style="left:${pocisk.odlew}%;bottom:${pocisk.oddul}px"></div>`;  
+        });
+};
+var is_colliding = function( $div1, $div2 ) {
+	// Div 1 data
+	var d1_offset             = $div1.offset();
+	var d1_height             = $div1.outerHeight( true );
+	var d1_width              = $div1.outerWidth( true );
+	var d1_distance_from_top  = d1_offset.top + d1_height;
+	var d1_distance_from_left = d1_offset.left + d1_width;
 
-	elemenciurkaruzeli.forEach(div => {
-		var idudidu = div.id;
-		var odpowiadajacepokazywajkowe = document.getElementById(`obrazz${idudidu}`);
-		div.addEventListener("click", function() {
-			div.classList.toggle("active");
-	    	lozko.getSVGDocument().getElementById("path").setAttribute("fill", "#1F00FC");
-	    	document.getElementById("pokazywajka").style.background = "#F36AF6";
-	  		if (div.classList.contains("active")) {
-	    		odpowiadajacepokazywajkowe.style.display = "block";
+	// Div 2 data
+	var d2_offset             = $div2.offset();
+	var d2_height             = $div2.outerHeight( true );
+	var d2_width              = $div2.outerWidth( true );
+	var d2_distance_from_top  = d2_offset.top + d2_height;
+	var d2_distance_from_left = d2_offset.left + d2_width;
 
-	  		} else {
-	    		odpowiadajacepokazywajkowe.style.display = "none";
-	  		};
+	var not_colliding = ( d1_distance_from_top < d2_offset.top || d1_offset.top > d2_distance_from_top || d1_distance_from_left < d2_offset.left || d1_offset.left > d2_distance_from_left );
 
-		});
-	});
+	// Return whether it IS colliding
+	return ! not_colliding;
+};
+hitcounter = 0;
+
+function gierka()  {
+
+        $('#hitcounter').html(hitcounter)
+
+
+        pociski.forEach(pocisk => {
+            pocisk.oddul = pocisk.oddul + 10;
+
+        });
+
+
+        $(bloki).each(function() {
+                    translacja = parseInt($(this).css("right"));
+                    if($(this).position().left < 100) {
+                        if($(this).hasClass('true')) {
+                            $(this).removeClass('true');
+                            $(this).addClass('false');
+                            $(this).css("right", translacja-1);
+                        } else {
+                            $(this).removeClass('false');
+                            $(this).addClass('true');
+
+                        }
+                    } else if($(this).position().left > $(window).width())  {
+
+                                $(this).removeClass('false');
+                                $(this).addClass('true');
+                                $(this).css("right", translacja+1);
+
+                                        
+                        } else {
+                            if($(this).hasClass('true')) {
+                                translacja = translacja + 2;
+                                $(this).css("right", translacja);
+                            } else {
+                                translacja = translacja - 2;
+                                $(this).css("right", translacja);
+                        }
+                    };
+            })
+
+
+
+            $('.pocisk').each(function () {
+                    var self = this;
+                    var doskozzza = parseInt($(this).position().top);
+                    var doskozza = Math.ceil(doskozzza / 10) * 10;
+                    var doskozzas = parseInt($(this).position().left);
+                    $(bloki).each(function () {
+                        var hujoza = {
+                            podofftop : parseInt($(this).position().top),
+                            offleft : parseInt($(this).position().left) + 1,
+                            widdth : parseInt($(this).outerWidth())
+                        }
+                        var topoff =  Math.ceil(hujoza.podofftop / 10) * 10;
+                        var leftoff = hujoza.offleft + hujoza.widdth;
+                        if(+doskozzas <= +leftoff) {
+                            if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
+                                $(this).html($("#wybuch").html()); 
+                                $(self).remove();
+                                hitcounter++;
+                                $('#hitcounter').html(hitcounter)
+                                if (hitcounter == 25) {
+                                    $('#przechwalka').html(`That was fun. Now here's some projects of mine:`);
+                                }
+                            }
+                        } 
+                    });
+            })
+            szczelanie();
+}
+        
+var giera = [];
+plup = 0;
+
+    document.onkeydown = function(e) {
+        if(e.keyCode === 16) {
+            if(!plup==1) {
+            var huj = setInterval(gierka, 20);
+            giera.push(huj);
+            plup = 1
+            $('#przechwalka').html('X to shoot, arrows to move, Shift to stop');
+            $('#dzialo').css("display", "block");
+            } else {
+            giera.forEach(instancja => {
+            clearInterval(instancja);
+            })
+            $('#przechwalka').html(`That was fun. Now here's some projects of mine:`);
+            plup = 0;
+            }
+        } else if(e.keyCode === 37) {
+            if (left > 0) {
+                left--; 
+            }
+         } else if(e.keyCode === 39) {
+            if (left < 92) {
+                left++; 
+            }
+         }
+         else if(e.keyCode === 88) {
+            pociski.push({
+                odlew : left + 5,
+                oddul : 0
+            })
+         }
+         document.documentElement.style.setProperty("--left", left);
+    }
+    
+
+
+
+
+
 </script>
 </body>
 </html>

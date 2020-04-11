@@ -1,0 +1,167 @@
+:root {
+    --b: #FFCC33;
+    --left: 48;
+    --pociskleft: 46;
+    --bottom: 0;
+}
+
+body {
+    margin:0;
+    overflow-x:hidden;
+    background-color: var(--b);
+    font-family: 'Press Start 2P';
+}
+
+h1, h2 {
+    font-family: "Press Start 2P", sans-serif;
+
+}
+
+#guracontent {
+    position:absolute;
+    top:30%;
+}
+
+h1 {
+    font-size:3rem;
+}
+
+#gura {
+    position:sticky;
+    width:80vw;
+    height:80vh;
+    margin-top:auto;
+    margin:auto;
+}
+
+.skillwrapper {
+    position:relative;
+    height:90vh;
+}
+footer {
+    width:100vw;
+    height:20vh;
+    padding-top:10vh;
+    margin:auto;   
+}
+
+.footertext {
+    margin:4rem;
+}
+
+img {
+    height:20vh;
+    margin:auto;
+    filter: brightness(0%);
+}
+
+li:hover img {
+    transition:0.2s;
+    filter:brightness(100%);
+
+}
+
+li:hover #magdakolko {
+    transition:0.2s;
+    filter:brightness(100%);
+
+}
+
+a {
+    text-decoration:none;
+    color:white;
+}
+#skile {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        letter-spacing: 2px;
+        grid-gap:5rem;
+    margin:auto;
+    width:80vw;
+    margin-bottom:10vh;
+}
+
+#skile li {
+    display:block;
+    text-transform: uppercase;
+    position: relative;
+    margin:auto;
+    transform:none;
+    height:1rem;
+
+}
+
+#hitcounter {
+    float:right;
+    margin:2rem;
+}
+.wybuchgif {
+    height:auto;
+}
+#works {
+    list-style-type: none;
+    display: grid;
+    position:relative;
+    grid-template-columns: repeat(4, 1fr);
+    letter-spacing: 2px;
+    grid-auto-rows:repeat(auto-fill, 5rem);
+    margin:auto;
+}
+
+#works li {
+    position:relative;
+    text-align:center;
+    color:white;
+    margin:auto;
+    margin-bottom:3rem;
+
+}
+
+#magdakolko {
+    height:10vh;
+    width:10vh;
+
+    margin:auto;
+    border:solid 1rem red;
+    border-radius:100%;
+    filter: brightness(0%);
+}
+
+.description {
+    display:none;
+    width:15vw;
+    position:absolute;
+    top:0;
+    z-index:420;
+    text-align:justify;
+}
+
+.guurka {
+    padding:10rem;
+    padding-top:1rem;
+    margin:auto;
+}
+
+#works li:hover .description {
+    display:block;
+}
+
+/*gierka*/
+
+#dzialo {
+    position:absolute;
+    left:calc(var(--left) * 1%);
+    width:4vw;
+    height:5vh;
+    background-color:black;
+    bottom:0;
+    display:none;
+}
+
+.pocisk {
+    position:absolute;
+    background-color:black;
+    width:1rem;
+    height:1rem;
+}
