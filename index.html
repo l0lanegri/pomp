@@ -286,8 +286,8 @@ function gierka()  {
                         var leftoff = hujoza.offleft + hujoza.widdth;
                         if(+doskozzas <= +leftoff && $(this).hasClass('active')) {
                             if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
-                                $(this).removeClass(`active`);
-                                $(this).css(`background-image`, `'assets/wybuch.gif'`)
+                                $(this).removeClass('active');
+                                $(this).css(`background-image`, `'assets/wybuch.gif'`);
                                 hitcounter = hitcounter+1;
                                 $('#hitcounter').html(hitcounter)
                                 if (hitcounter == 25) {
