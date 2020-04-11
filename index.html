@@ -286,14 +286,14 @@ function gierka()  {
                         if(+doskozzas <= +leftoff) {
                             if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
                                 $(this).html(`<img class="wybuchgif" src="assets/wybuch.gif">`);
-                                $(this).find($(".wybuchgif")).attr("src", $(this).find($(".wybuchgif")).attr("src")); 
                                 hitcounter = hitcounter+1;
                                 $('#hitcounter').html(hitcounter)
                                 if (hitcounter == 25) {
                                     $('#przechwalka').html(`That was fun. Now here's some projects of mine:`);
                                 }
                             }
-                        } 
+                        }
+                        $(this).find($(".wybuchgif")).attr("src", $(this).find($(".wybuchgif")).attr("src"));  
                     });
             })
             szczelanie();
