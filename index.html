@@ -198,7 +198,6 @@
     </footer>
 
     <template id="wybuch">
-        <img class="wybuchgif" src="assets/wybuch.gif">
     </template>
 <script>
 var dzialo = document.getElementById('dzialo');
@@ -286,7 +285,7 @@ function gierka()  {
                         var leftoff = hujoza.offleft + hujoza.widdth;
                         if(+doskozzas <= +leftoff) {
                             if(doskozza == topoff && +doskozzas >= +hujoza.offleft) {
-                                $(this).html($("#wybuch").html()); 
+                                $(this).html(`<img class="wybuchgif" src="assets/wybuch.gif">`); 
                                 hitcounter = hitcounter+1;
                                 $('#hitcounter').html(hitcounter)
                                 if (hitcounter == 25) {
@@ -328,7 +327,7 @@ plup = 0;
          }
          else if(e.keyCode === 88) {
             pociski.push({
-                odlew : left,
+                odlew : left + 2,
                 oddul : 0
             })
          }
