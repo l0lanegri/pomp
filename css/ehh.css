@@ -287,3 +287,28 @@ li:hover a #magdakolko {
     margin:auto;
     display: block;
 }
+
+
+@media only screen and (max-width: 50rem) {
+    #projekt nav {
+        position:absolute;
+        width:100vw;
+        height:3rem;
+        top:0;
+        background-color:var(--b);
+        margin:auto;
+    }
+
+    #projekt main {
+        position:absolute;
+        width:100vw;
+        top:10vh;
+        height:90vh;
+        color:black;
+        margin:2rem;
+        overflow:scroll;
+        scrollbar-width:none;
+        font-family: 'Inconsolata', monospace, sans-serif;
+        font-size:1rem;
+    }
+}
