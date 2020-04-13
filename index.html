@@ -229,8 +229,8 @@ function zamknijsb() {
 
 $('#works').find('.projektt').each(function() {
     $(this).click(function() {
-        var hujnia = function() { $('body').prepend($('#projekcik').html());
         var nazwww = $(this).attr('id');
+        var hujnia = function() { $('body').prepend($('#projekcik').html());
         $('#projekt').find('main').load(`${nazwww}.html`);
         };
         window.history.pushState(hujnia,'',`${nazwww}`);
