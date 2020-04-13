@@ -229,11 +229,11 @@ function zamknijsb() {
 
 $('#works').find('.projektt').each(function() {
     $(this).click(function() {
-        function hujnia() { $('body').prepend($('#projekcik').html());
+        var hujnia = function() { $('body').prepend($('#projekcik').html());
         var nazwww = $(this).attr('id');
         $('#projekt').find('main').load(`${nazwww}.html`);
         };
-        history.pushState(hujnia,'','${nazwww}');
+        window.history.pushState(hujnia,'','${nazwww}');
     });
 });
 
