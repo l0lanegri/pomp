@@ -253,6 +253,11 @@ li:hover a #magdakolko {
     width:80vw;
 }
 
+#imgcontainer img {
+    width:100%;
+}
+
+
 #mapa0 {
     position: relative;
     top:0;
