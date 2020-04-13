@@ -233,7 +233,7 @@ $('#works').find('.projektt').each(function() {
         var nazwww = $(this).attr('id');
         $('#projekt').find('main').load(`${nazwww}.html`);
         };
-        window.history.pushState(hujnia,'','${nazwww}');
+        window.history.pushState(hujnia,'',`${nazwww}`);
     });
 });
 
