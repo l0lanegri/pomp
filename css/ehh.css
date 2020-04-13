@@ -246,17 +246,23 @@ li:hover a #magdakolko {
     display:none;
 }
 
-#img0 {
+
+#imgcontainer {
+    position: relative;
+    top:0;
+}
+
+#mapa0 {
     position: relative;
     top:0;
     display:none;
 }
 
-#img0:hover {
+#imgcontainer:hover #mapa0 {
     display: block;
 }
 
-#img1 {
+#mapa1 {
     position:absolute;
     top: 0;
 }
