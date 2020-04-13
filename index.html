@@ -228,9 +228,11 @@ function zamknijsb() {
 }
 
 $('#works').find('.projektt').each(function() {
+    $(this).click(function() {
         var nazwww = $(this).attr('id');
         $('body').prepend($('#projekcik').html());
         $('#projekt').find('main').load(`${nazwww}.html`);
+    });
 });
 
 
