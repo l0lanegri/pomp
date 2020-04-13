@@ -1,5 +1,5 @@
 :root {
-    --b: #FFCC33;
+    --b: black;
     --left: 48;
     --pociskleft: 46;
     --bottom: 0;
@@ -10,33 +10,34 @@ body {
     overflow-x:hidden;
     background-color: var(--b);
     font-family: 'Press Start 2P';
+    color: white;
 }
+
+
 
 h1, h2 {
     font-family: "Press Start 2P", sans-serif;
 
 }
 
-#guracontent {
-    position:absolute;
-    top:30%;
-}
+
 
 h1 {
     font-size:3rem;
 }
 
 #gura {
-    position:sticky;
-    width:80vw;
-    height:80vh;
+    width:80%;
+    height:80%;
+    padding:10%;
+    padding-top:20%;
+    padding-bottom:15%;
     margin-top:auto;
     margin:auto;
 }
 
 .active {
     content:"";
-    background-image:'assets/wybuch.gif';
 }
 
 .skillwrapper {
@@ -44,10 +45,62 @@ h1 {
     height:90vh;
 }
 footer {
+    padding:10rem;
+    padding-top:10rem;
+    padding-bottom:1rem;
+    margin:auto;
+}
+#projekt {
     width:100vw;
-    height:20vh;
-    padding-top:10vh;
-    margin:auto;   
+    height: 100vh;
+    left:0;
+    animation: projektwejscie 0.5s ease-in;
+    background-color:white;
+    position:fixed;
+    z-index:600;
+}
+
+#projekt nav {
+    position:absolute;
+    width:7vw;
+    height:100vh;
+    background-color:var(--b);
+    margin:auto;
+}
+
+#projekt nav button {
+    display:block;
+    background-color:var(--b);
+    color:white;
+    border:none;
+    margin:auto;
+    padding:2rem;
+    font-size:2rem;
+    font-family: "Press Start 2P", sans-serif;
+    transition:0.2s;
+    cursor: pointer;
+}
+
+#projekt nav #dolne {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+#projekt nav button:hover {
+    transform:scale(1.1);
+}
+
+#projekt main {
+    position:absolute;
+    width:93vw;
+    right:0;
+}
+
+
+@keyframes projektwejscie {
+    0% { left:100vw; }
+    100% { left:0vw; }
 }
 
 .footertext {
@@ -57,7 +110,7 @@ footer {
 img {
     height:20vh;
     margin:auto;
-    filter: brightness(0%);
+    filter: brightness(0%) invert(100%);
 }
 
 li:hover img {
@@ -66,15 +119,9 @@ li:hover img {
 
 }
 
-li:hover #magdakolko {
-    transition:0.2s;
-    filter:brightness(100%);
-
-}
-
 a {
     text-decoration:none;
-    color:black;
+    color:white;
 }
 
 footer a {
@@ -112,7 +159,8 @@ footer a {
     list-style-type: none;
     display: grid;
     position:relative;
-    grid-template-columns: repeat(4, 1fr);
+    width:80%;
+    grid-template-columns: repeat(3, 1fr);
     letter-spacing: 2px;
     grid-auto-rows:repeat(auto-fill, 5rem);
     margin:auto;
@@ -123,18 +171,25 @@ footer a {
     text-align:center;
     color:white;
     margin:auto;
-    margin-bottom:3rem;
+    margin-bottom:10rem;
 
+}
+
+#works li a {
+    color:white;
 }
 
 #magdakolko {
     height:10vh;
     width:10vh;
-
-    margin:auto;
     border:solid 1rem red;
     border-radius:100%;
-    filter: brightness(0%);
+    filter: brightness(0%) invert(100%);
+}
+
+li:hover a #magdakolko {
+    filter:brightness(100%);
+    transition:0.2s;
 }
 
 .description {
@@ -163,14 +218,14 @@ footer a {
     left:calc(var(--left) * 1%);
     width:4vw;
     height:5vh;
-    background-color:black;
+    background-color:white;
     bottom:0;
     display:none;
 }
 
 .pocisk {
     position:absolute;
-    background-color:black;
+    background-color:white;
     width:1rem;
     height:1rem;
 }

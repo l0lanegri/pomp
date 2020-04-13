@@ -29,6 +29,7 @@
     <title>Bartosz Woch</title>
 </head>
 <body>
+<div id="wrapper">
     <header id="gura">
         <div id="guracontent">
         <h1>Hi!</h1>
@@ -72,7 +73,9 @@
 </div>
 <div id="dzialo"></div>
 </div>
-    <h2 id="przechwalka" class="guurka">These were some of my skills. If you wanna check yours, hit Shift.</h2>
+    <h2 id="przechwalka" class="guurka">These were some of my skills. If you wanna check yours, hit Shift.<br><br><br><br><br>
+    Here's some projects I've done so far:
+    </h2>
 
     <ul id="works">
         <li>
@@ -134,8 +137,8 @@
                 </div>
             </a>
         </li>
-        <li>
-            <img src="assets/mur.png" id="mur">
+        <li class="projektt" id="mur">
+            <img src="assets/mur.png">
                 <div class="description">
                     <p>2019</p>
                     <p>
@@ -148,8 +151,8 @@
                     </p>
                 </div>
         </li>
-        <li>
-            <img src="assets/czwury.svg" id="czworki"></img>
+        <li class="projektt" id="czworki">
+            <img src="assets/czwury.svg" ></img>
                 <div class="description">
                     <p>2018</p>
                     <p>
@@ -177,9 +180,9 @@
                 </div>
         </li>
 
-        <li>
+        <li class="projektt" id="katmun">
             <img src="assets/katmun.png" id="katmunpic"></img>
-                <div class="description" id="katmun">
+                <div class="description">
                     <p>2016</p>
                     <p>
                         <strong>
@@ -196,7 +199,18 @@
         <h2 class="footertext">Now that that's out of the way, feel free to email me at <a href="mailto:bartosz.woch1@gmail.com">bartosz.woch1@gmail.com</a> or call at <strong>+48 669 404 893</strong>. 
         My site has explosions. Yours can too!</h2>
     </footer>
+</div>
+    <template id="projekcik"><div id="projekt">
+        <nav>
+            <button id="clos" onclick="zamknijsb()">×</button>
+            <div id="dolne">
+                <button id="next">&#8250</button>
+            </div>    
+        </nav>
+        <main>
 
+        </main>
+    </div></template>
     <template id="wybuch">
     </template>
 <script>
@@ -206,6 +220,20 @@ var pociski = [];
 var bloki = $('#skile').find('li');
 
 var zindex = 420;
+
+function zamknijsb() {
+    $('#projekt').remove();
+}
+
+$('#works').find('.projektt').each(function() {
+    $(this).click(function() {
+        $('body').prepend($('#projekcik').html());
+        var nazwww = $(this).attr('id');
+        $('#projekt').find('main').load(`${nazwww}.html`)
+    });
+});
+
+
 $(bloki).each(function() {
     zindex++
     $(this).css("z-index", zindex);
@@ -216,7 +244,6 @@ $(bloki).each(function() {
     var huj = lwoprar.toString(); 
     $(this).addClass(huj);
 });
-
 
 function szczelanie() { 
         document.getElementById("pociski").innerHTML = "";
