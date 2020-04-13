@@ -119,6 +119,7 @@ footer a {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
     letter-spacing: 2px;
     grid-auto-rows:repeat(auto-fill, 5rem);
+    gap:5rem;
     margin:auto;
 }
 
@@ -127,7 +128,7 @@ footer a {
     text-align:center;
     color:white;
     WIDTH:80%;
-    margin:10rem;
+    margin:auto;
 
 }
 
