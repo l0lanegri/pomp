@@ -257,11 +257,11 @@ li:hover a #magdakolko {
     position: relative;
     top:0;
     display:none;
+    transition:0.2s;
 }
 
 #imgcontainer:hover #mapa0 {
     display: block;
-    transition:0.2s;
 }
 
 #mapa1 {
@@ -272,4 +272,5 @@ li:hover a #magdakolko {
 #gkmlogo {
     width:40%; 
     margin:auto;
+    display: block;
 }
