@@ -118,7 +118,7 @@ footer {
     margin:4rem;
 }
 
-img {
+li img {
     height:20vh;
     margin:auto;
     filter: brightness(0%) invert(100%);
@@ -165,6 +165,7 @@ footer a {
 }
 .wybuchgif {
     height:auto;
+    filter: brightness(0%) invert(100%);
 }
 #works {
     list-style-type: none;
