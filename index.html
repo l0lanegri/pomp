@@ -232,6 +232,7 @@ $('#works').find('.projektt').each(function() {
         var nazwww = $(this).attr('id');
         $('body').prepend($('#projekcik').html());
         $('#projekt').find('main').load(`${nazwww}.html`);
+        if(nazwww = "mur") { $('main').css("background-color", "black"); $('main').css("color", "white") } else { $('main').css("background-color", "white"); $('main').css("color", "black") };
     });
 });
 
