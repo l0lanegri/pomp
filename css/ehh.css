@@ -254,7 +254,10 @@ li:hover a #magdakolko {
 }
 
 #imgcontainer img {
-    width:100%;
+    max-width:100%;
+    margin:auto;
+    margin-bottom:2rem;
+    display:block;
 }
 
 
